@@ -5,13 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Credit Loan Defaults</title>
-<!--
 
-Template 2097 Pop
 
-http://www.tooplate.com/view/2097-pop
-
--->
     <!-- load CSS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300">  <!-- Google web font "Open Sans" -->
     <link rel="stylesheet" href="css/bootstrap.min.css">                                  <!-- https://getbootstrap.com/ -->
@@ -53,19 +48,30 @@ http://www.tooplate.com/view/2097-pop
                                                     <div class="p-sm-4 p-2">
                                                         <div class="row mb-3">
                                                             <div class="col-12">
-                                                                <h2 class="tm-page-title">Project</h2>        
+                                                                <h2 class="tm-page-title" style="color:black;">Project</h2>        
                                                             </div>
                                                         </div>
                                                         <div class="row tm-reverse-sm">
                                                             <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                                                                <p class="mb-4">Background information on credit loan defaults.</p>
-                                                                <p class="mb-4">Variables used when analyzing data.</p>
-                                                                <p class="mb-5">About machine learning and algorithm used.</p>
+                                                                <p class="mb-4" style="color:black;">Objective: predict the probability of credit default based on credit owner’s 
+                                                                    characteristics</p>
+                                                                <p class="mb-4" style="color:black;">The Data: the data was taken from statistics available on 
+                                                                    Lending Club for credit statuses in 2015.</p>
+                                                                <p class="mb-5" style="color:black;">Machine Learning: logistics regression and random trees were 
+                                                                    used as prediction algorithms</p>
                                     
-                                                            </div>                                                
-                                                            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-lg-0 mb-sm-4 mb-4">
-                                                                <img src="img/team.jpg" class="img-fluid">
-                                                            </div>
+                                                            </div>        
+                                                            <a href="#" id="pop">
+                                                                    <img id="imageresource" src=img/table.png style="width: 500px; height: 300px;">
+                                                                    
+                                                                </a>
+                                                                
+                                                                <!-- Creates the bootstrap modal where the image will appear -->
+                                                                                                     
+                                                            <!--<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-lg-0 mb-sm-4 mb-4">
+                                                                <img id ="table" src="img/table.png" class="img-fluid" alt="tab">
+                                                                
+                                                            </div>-->
                                                         </div>
                                                     </div>
                                                 </div>
@@ -82,30 +88,49 @@ http://www.tooplate.com/view/2097-pop
                                         <div class="product__description">
                                             <div class="row mb-3">
                                                 <div class="col-12">
-                                                    <h2 class="tm-page-title"> Data Analysis 
+                                                    <h2 class="tm-page-title" style="color:black;"> Data Analysis 
                                                     </h2>        
                                                 </div>
                                             </div>  
                                             <div class="row mb-3">
                                                     <div class="col-12">
-                                                        <p>This is some stuff about data analysis</p>
+                                                        <p style="color:black;">Initial data analysis focuses on a few different variables ranging from looking at credit grade, loan amounts, the purposes for those loans, and loans by state</p>
                                                     </div>
                                             </div>                                     
                                             <div class="row">
                                                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                                    <img src="img/proj_credit.jpg" class="img-fluid mb-3">
-                                                    <p>Here are the variables we analyzed and the figure.</p>
-                                                    <p>Here is what the data said.</p>    
+                                                    <img src="LoanGrade_AvgLoan_DeafultStatus.jpg" class="img-fluid"  width = "300" height = "200">
+                                                    <figcaption class="figure-caption">FIGURE 1</figcaption>
+                                                    <p style="color:black;">The first figure shows the average loan amount by grade. It can be seen that people with a lower credit grade appear to appear to accrue higher debt.</p>
+                                                        
                                                 </div>
+                                                
                                                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                                    <p>Here are the variables we analyzed and the figure.</p>
-                                                    <p>Here is what the data.</p>
-                                                    <img src="img/proj_machine.jpg" class="img-fluid">
+                                                    <p style="color:black;">The second figure shows the type of loans taken by people. The data shows the most common type of loans are credit cards, and educational was the least common.</p>
+                                                    <img src="Purpose_AvgLoanAmt.jpg" class="img-fluid">
+                                                    <figcaption class="figure-caption">FIGURE 2</figcaption>
                                                 </div>  
                                                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                                        <img src="img/proj_credit.jpg" class="img-fluid mb-3">
-                                                        <p>Here are the variables we analyzed and the figures</p>
-                                                        <p>Here is what the data said.</p>    
+                                                    <p style="color:black;">The third figure combines the first two, showing loans by type, and how much each credit grade takes of each type. One telling thing about this graph is that the lower grades took less loans, but the loans taken were higher amounts.</p>
+                                        
+                                                    <img src="Loan Purpose_Grade.jpg" class="img-fluid">
+                                                    <figcaption class="figure-caption">FIGURE 3</figcaption>
+                                                </div>  
+                                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                                        <div class="well text-center">
+                                                                <span>Sister Properties:</span>
+                                                                <div class="col-md-6">
+                                                                    <img src="Total_Loans_Per_state.jpg" class = "img-fluid mb-3" /></a>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <img src="States_Default_Status_of_1.png" class = "img-fluid mb-3"/></a>
+                                                                    <figcaption class="figure-caption">FIGURES 4 AND 5</figcaption>
+                                                                </div>
+                                                            </div>
+                                                        <!--<img src="Total_Loans_Per_state.jpg" class="img-fluid mb-3">-->
+                                                        <!--<img src="States_Default_Status_of_1.png" class="img-fluid mb-3">-->
+                                                        <p style="color:black;">Then we looked at the amount of loans taken out of each state. Texas, California, and New York are amongst the highest loaners and so it's no surprise that these states also have a higher amount of people defaulting on those loans.</p>
+                                                         
                                                 </div>                                      
                                             </div>
                                             
@@ -117,36 +142,38 @@ http://www.tooplate.com/view/2097-pop
                                     <div class="product">
                                         <div class="tm-nav-link">
                                             <i class="fas fa-cogs fa-3x tm-nav-icon"></i>
-                                            <span class="tm-nav-text">Machine Learning</span>
+                                            <span class="tm-nav-text">Logistics Regression</span>
                                             <div class="product__bg"></div>             
                                         </div>                                                                 
                                         <div class="product__description">
                                             <div class="p-sm-4 p-2">
                                                 <div class="row mb-3">
                                                     <div class="col-12">
-                                                        <h2 class="tm-page-title">Machine Learning</h2>        
+                                                        <h2 class="tm-page-title" style="color:black;">Logistics Regression</h2>        
                                                     </div>
                                                 </div>
                                                 <div class="row mb-3">
                                                     <div class="col-12">
-                                                        <p>This is some stuff about machine learning</p>
+                                                        <p style="color:black;">This is some stuff about logistics regression</p>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                                            <img src="img/proj_credit.jpg" class="img-fluid mb-3">
-                                                            <p>Here are the variables we analyzed and the figure.</p>
-                                                            <p>Here is what the data said.</p>    
+                                                            <img src="img/matplotlib_figures/default_and_employment.png" class="img-fluid">
+                                                            <p style="color:black;">Here are the variables we analyzed and the figure.</p>
+                                                            <p style="color:black;">Here is what the data said.</p>    
                                                         </div>
                                                         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                                            <p>Here are the variables we analyzed and the figure.</p>
-                                                            <p>Here is what the data.</p>
-                                                            <img src="img/proj_machine.jpg" class="img-fluid">
+                                                            
+                                                            <img src="img/matplotlib_figures/default_and_loantype.png" class="img-fluid">
+                                                            <p style="color:black;">Here are the variables we analyzed and the figure.</p>
+                                                            <p style="color:black;">Here is what the data.</p>
+                                                            
                                                         </div>  
                                                         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                                                <img src="img/proj_credit.jpg" class="img-fluid mb-3">
-                                                                <p>Here are the variables we analyzed and the figures</p>
-                                                                <p>Here is what the data said.</p>    
+                                                            <img src="img/matplotlib_figures/default_and_grade.png" class="img-fluid">
+                                                            <p style="color:black;">Here are the variables we analyzed and the figures</p>
+                                                            <p style="color:black;">Here is what the data said.</p>    
                                                         </div>                                      
                                                     </div>
                                             </div>
@@ -158,29 +185,39 @@ http://www.tooplate.com/view/2097-pop
                                     <div class="product">
                                         <div class="tm-nav-link">
                                             <i class="fas fa-code-branch fa-3x tm-nav-icon"></i>
-                                            <span class="tm-nav-text">Conclusions</span>
+                                            <span class="tm-nav-text">Random Trees</span>
                                             <div class="product__bg"></div>             
-                                        </div>                                                              
-                                        <div class="product__description">
-                                            <div class="p-sm-4 p-2">
-                                                <div class="row mb-3">
-                                                    <div class="col-12">
-                                                        <h2 class="tm-page-title">Conclusions</h2>        
-                                                    </div>
-                                                </div>
-                                                <div class="row tm-reverse-sm">
-                                                    <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                                                        <p class="mb-4">These are our conclusions from data analysis</p>
-                                                        <p class="mb-4">Reiteration of machine learning results</p>
-                                                        <p class="mb-5">Lessons learned during project.</p>
-                            
-                                                    </div>                                                
-                                                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-lg-0 mb-sm-4 mb-4">
-                                                        <img src="img/team.jpg" class="img-fluid">
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
+                                                                                                      
+                                               <div class="product__description">
+                                                <div class="p-sm-4 p-2">
+                                                    <div class="row mb-3">
+                                                        <div class="col-12">
+                                                            <h2 class="tm-page-title" style="color:black;">Random Trees</h2>        
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <div class="col-12">
+                                                            <p style="color:black;">This is some stuff about random forest.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                                                <img src="img/matplotlib_figures/default_and_factors.png" class="img-fluid">
+                                                                <p style="color:black;">Here are the variables we analyzed and the figure.</p>
+                                                             
+                                                            </div>
+                                                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                                                
+                                                                <img src="img/matplotlib_figures/prediction_accuracy.png" class="img-fluid">
+                                                                <p style="color:black;">Here is a summary of the machine learning results.</p>
+                                                                
+                                                                
+                                                            </div>  
+                                                                                                
+                                                    </div>
+                                                </div>
+                                            </div>  
                                     </div>
                                 </div>
                             </div> 
