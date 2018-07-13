@@ -100,21 +100,20 @@
                                             <div class="row">
                                                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                                     <img src="LoanGrade_AvgLoan_DeafultStatus.jpg" class="img-fluid"  width = "300" height = "200">
-                                                    <figcaption class="figure-caption">FIGURE 1</figcaption>
                                                     <p style="color:black;">The first figure shows the average loan amount by grade. It can be seen that people with a lower credit grade appear to appear to accrue higher debt.</p>
                                                         
                                                 </div>
                                                 
                                                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                                    <p style="color:black;">The second figure shows the type of loans taken by people. The data shows the most common type of loans are credit cards, and educational was the least common.</p>
                                                     <img src="Purpose_AvgLoanAmt.jpg" class="img-fluid">
-                                                    <figcaption class="figure-caption">FIGURE 2</figcaption>
+                                                    <p style="color:black;">The second figure shows the type of loans taken by people. The data shows the most common type of loans are credit cards, and educational was the least common.</p>
+
                                                 </div>  
                                                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                                    <p style="color:black;">The third figure combines the first two, showing loans by type, and how much each credit grade takes of each type. One telling thing about this graph is that the lower grades took less loans, but the loans taken were higher amounts.</p>
                                         
                                                     <img src="Loan Purpose_Grade.jpg" class="img-fluid">
-                                                    <figcaption class="figure-caption">FIGURE 3</figcaption>
+                                                    <p style="color:black;">The third figure combines the first two, showing loans by type, and how much each credit grade takes of each type. One telling thing about this graph is that the lower grades took less loans, but the loans taken were higher amounts.</p>
+
                                                 </div>  
                                                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                                         <div class="well text-center">
@@ -124,7 +123,6 @@
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <img src="States_Default_Status_of_1.png" class = "img-fluid mb-3"/></a>
-                                                                    <figcaption class="figure-caption">FIGURES 4 AND 5</figcaption>
                                                                 </div>
                                                             </div>
                                                         <!--<img src="Total_Loans_Per_state.jpg" class="img-fluid mb-3">-->
@@ -154,27 +152,33 @@
                                                 </div>
                                                 <div class="row mb-3">
                                                     <div class="col-12">
-                                                        <p style="color:black;">This is some stuff about logistics regression</p>
+                                                        <p style="color:black;">Logistic Regression is a type of classification algorithm involving a linear discriminant where the output is a probability that the given input point belongs to a certain class. In our case, that class is default or no default.</p>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                                             <img src="img/matplotlib_figures/default_and_employment.png" class="img-fluid">
-                                                            <p style="color:black;">Here are the variables we analyzed and the figure.</p>
-                                                            <p style="color:black;">Here is what the data said.</p>    
+                                                            <p style="color:black;">Logistical Regression was used to determine the correlation between the categorical factors of employment. The test shows that 10+ years of employment length is the least correlated to a default status. The factor with the highest correlation to default was “1 year” of experience. However, none of these factors were highly correlated to default status.</p>
+                                                              
                                                         </div>
                                                         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                                             
                                                             <img src="img/matplotlib_figures/default_and_loantype.png" class="img-fluid">
-                                                            <p style="color:black;">Here are the variables we analyzed and the figure.</p>
-                                                            <p style="color:black;">Here is what the data.</p>
+                                                            <p style="color:black;">It was used to determine the correlation between the categorical factors of Loan Purpose. Based on the results of the test, the loan purpose with the highest correlation to default status is “Small Business” and the second highest correlation is “Renewable Energy”. The loan purpose with the lowest correlation was “Wedding” and “Credit Card”. </p>
                                                             
                                                         </div>  
                                                         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                                             <img src="img/matplotlib_figures/default_and_grade.png" class="img-fluid">
-                                                            <p style="color:black;">Here are the variables we analyzed and the figures</p>
-                                                            <p style="color:black;">Here is what the data said.</p>    
-                                                        </div>                                      
+                                                            <p style="color:black;">It was also used to determine the correlation between the categorical factors of loan grade. Lending Club assigns a grade to each loan based on credit score and combination of several internal indicators of credit risk. This test shows that the internal model assigning a grade within lending club is doing a good job of determining risky loans. For example, the A graded loans have the lowest correlation to default status and the G rated loans have the highest correlation to default status.</p>
+                                                        </div> 
+                                                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                                            <img src="img/matplotlib_figures/default_and_ownership.png" class="img-fluid">
+                                                            <p style="color:black;">We then used logistical regression to determine the correlation between the categorical factors of home ownership type. While none of these factors were highly correlated to default status, it is surprising that “mortgage” was least correlated to default status while “own” a home is the second least correlated. It is not surprising that “Rent” is the highest correlation to default. </p>
+                                                        </div> 
+                                                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                                            <img src="img/matplotlib_figures/prediction_accuracy.png" class="img-fluid">
+                                                            <p style="color:black;">Following the logistical regression tests on each categorical factor the accuracy of the model in predicting default status was tested. The training and testing data scores were both .81. The overall accuracy of predictions was 82%. </p>
+                                                        </div>                                         
                                                     </div>
                                             </div>
                                         </div>       
@@ -198,22 +202,16 @@
                                                     </div>
                                                     <div class="row mb-3">
                                                         <div class="col-12">
-                                                            <p style="color:black;">This is some stuff about random forest.</p>
+                                                            <p style="color:black;">"Random forests or random decision forests are an ensemble learning method for classification, regression and other tasks, that operate by constructing a multitude of decision trees at training time and outputting the classification or regression of the individual trees. Random decision forests correct for decision trees' habit of overfitting to their training set." - Wikipedia</p>
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                                                 <img src="img/matplotlib_figures/default_and_factors.png" class="img-fluid">
-                                                                <p style="color:black;">Here are the variables we analyzed and the figure.</p>
+                                                                <p style="color:black;">A random forest test was also used in order to determine the correlation between various numerical features and default status. The model score after fitting was .81. After assessing the model fit I ran a feature importance test to determine which feature was best correlated. The best correlated feature was “annual_inc” and the least correlated feature was “term”. This makes sense to me because the annual income of the borrower would make it more difficult to repay a loan. The second most correlated feature was “loan_amnt”. This makes sense because a higher loan amount would be harder to repay.</p>
                                                              
                                                             </div>
-                                                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                                                
-                                                                <img src="img/matplotlib_figures/prediction_accuracy.png" class="img-fluid">
-                                                                <p style="color:black;">Here is a summary of the machine learning results.</p>
-                                                                
-                                                                
-                                                            </div>  
+                                                          
                                                                                                 
                                                     </div>
                                                 </div>
