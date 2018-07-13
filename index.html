@@ -140,7 +140,7 @@
                                     <div class="product">
                                         <div class="tm-nav-link">
                                             <i class="fas fa-cogs fa-3x tm-nav-icon"></i>
-                                            <span class="tm-nav-text">Logistics Regression</span>
+                                            <span class="tm-nav-text">Machine Learnine</span>
                                             <div class="product__bg"></div>             
                                         </div>                                                                 
                                         <div class="product__description">
@@ -150,11 +150,13 @@
                                                         <h2 class="tm-page-title" style="color:black;">Logistics Regression</h2>        
                                                     </div>
                                                 </div>
+                                                
                                                 <div class="row mb-3">
                                                     <div class="col-12">
                                                         <p style="color:black;">Logistic Regression is a type of classification algorithm involving a linear discriminant where the output is a probability that the given input point belongs to a certain class. In our case, that class is default or no default.</p>
                                                     </div>
                                                 </div>
+                                                
                                                 <div class="row">
                                                         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                                             <img src="img/matplotlib_figures/default_and_employment.png" class="img-fluid">
@@ -175,9 +177,14 @@
                                                             <img src="img/matplotlib_figures/default_and_ownership.png" class="img-fluid">
                                                             <p style="color:black;">We then used logistical regression to determine the correlation between the categorical factors of home ownership type. While none of these factors were highly correlated to default status, it is surprising that “mortgage” was least correlated to default status while “own” a home is the second least correlated. It is not surprising that “Rent” is the highest correlation to default. </p>
                                                         </div> 
-                                                        <div class="container-fluid">
-                                                            <img src="img/matplotlib_figures/prediction_accuracy.png" class="img-fluid">
-                                                            <p style="color:black;">Following the logistical regression tests on each categorical factor the accuracy of the model in predicting default status was tested. The training and testing data scores were both .81. The overall accuracy of predictions was 82%. </p>
+                                                    
+                                                        <div class="mt-4 container-fluid">
+                                                                <h2 class="tm-page-title" style="color:black;">Random Forest</h2>        
+                                                                <p style="color:black;">"Random forests or random decision forests are an ensemble learning method for classification, regression and other tasks, that operate by constructing a multitude of decision trees at training time and outputting the classification or regression of the individual trees. Random decision forests correct for decision trees' habit of overfitting to their training set." - Wikipedia</p>
+
+                                                                <img class="img-fluid center-block" src="img/matplotlib_figures/default_and_factors.png">
+
+                                                                <p style="color:black;">A random forest test was also used in order to determine the correlation between various numerical features and default status. The model score after fitting was .81. After assessing the model fit I ran a feature importance test to determine which feature was best correlated. The best correlated feature was “annual_inc” and the least correlated feature was “term”. This makes sense to me because the annual income of the borrower would make it more difficult to repay a loan. The second most correlated feature was “loan_amnt”. This makes sense because a higher loan amount would be harder to repay.</p>
                                                         </div>                                         
                                                     </div>
                                             </div>
@@ -207,6 +214,7 @@
                                                     </div>
                                                     <div class="row">
                                                             <div class="container-fluid">
+                                                            
                                                                 <img class="img-fluid center-block" src="img/matplotlib_figures/default_and_factors.png">
                                                                 <p style="color:black;">A random forest test was also used in order to determine the correlation between various numerical features and default status. The model score after fitting was .81. After assessing the model fit I ran a feature importance test to determine which feature was best correlated. The best correlated feature was “annual_inc” and the least correlated feature was “term”. This makes sense to me because the annual income of the borrower would make it more difficult to repay a loan. The second most correlated feature was “loan_amnt”. This makes sense because a higher loan amount would be harder to repay.</p>
                                                              
