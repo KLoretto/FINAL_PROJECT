@@ -56,7 +56,7 @@
                                                                 <p class="mb-4" style="color:black;">Objective: predict the probability of credit default based on credit owner’s 
                                                                     characteristics</p>
                                                                 <p class="mb-4" style="color:black;">The Data: the data was taken from statistics available on 
-                                                                    Lending Club for credit statuses in 2015.</p>
+                                                                    Lending Club, a peer-to-peer lending system, for credit statuses in 2015. "Lending Club enables borrowers to create unsecured personal loans between $1,000 and $40,000. Investors can search and browse the loan listings on Lending Club website and select loans that they want to invest in based on the information supplied about the borrower, amount of loan, loan grade, and loan purpose." - Wikipedia</p>
                                                                 <p class="mb-5" style="color:black;">Machine Learning: logistics regression and random trees were 
                                                                     used as prediction algorithms</p>
                                     
@@ -190,7 +190,7 @@
 
                                                         <div class="container-fluid">
                                                                 <img src="img/matplotlib_figures/prediction_accuracy.png" class="img-fluid">
-                                                                <p style="color:black;">We then used logistical regression to determine the correlation between the categorical factors of home ownership type. While none of these factors were highly correlated to default status, it is surprising that “mortgage” was least correlated to default status while “own” a home is the second least correlated. It is not surprising that “Rent” is the highest correlation to default. </p>
+                                                                <p style="color:black;">Following the logistical regression tests on each categorical factor we tested the accuracy of the model in predicting default status. The training and testing data scores were both .81. The overall accuracy of predictions was 82%. </p>
                                                             </div> 
                                                                                                  
                                                     </div>
@@ -222,22 +222,22 @@
                                                     <div class="row">
                                                             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                                                 <img src="img/EmploymentLength_Default_NonDefault.png" class="img-fluid">
-                                                                <p style="color:black;">Something</p>
+                                                                <p style="color:black;">This is a graph showing the length of employment and the count of default status. Overall, those working 10+ years take out the most loans and have a low percentage of defaulting, but this is also likely related to their being a wider employment timeframe. This can be observed such that those working 9 years however have a relatively high default rate when compared to those working less than a year. It is hard to say whether working more translates to less debt and default status.</p>
                                                                   
                                                             </div>
                                                             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                                                 
                                                                 <img src="img/Purpose_AverageLoanAmount_Dflt_NonDflt.png" class="img-fluid">
-                                                                <p style="color:black;">Something </p>
+                                                                <p style="color:black;">This graph shows the count of default status by grade. The primary observation is that grades F and G show about a 50 percent default rate.</p>
                                                                 
                                                             </div>  
                                                             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                                                 <img src="img/LoanGrade_Default_Non Default.png" class="img-fluid">
-                                                                <p style="color:black;">Something.</p>
+                                                                <p style="color:black;">This graph shows the count of default status by the loan purpose. Just about all purposes show about a 50 percent default rate except for weddings and educational loans.</p>
                                                             </div> 
                                                             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                                                 <img src="img/OwnershipDefault_NonDefault.png" class="img-fluid">
-                                                                <p style="color:black;">Something</p>
+                                                                <p style="color:black;">This shows default statuses for the renting, owning, or mortgaging a house. Overall it shows that those that rent have a higher default status.</p>
                                                             </div> 
                                                         
                                                            
